@@ -44,7 +44,7 @@ for i in "${SHAREDFOLDERS[@]}" ; do
 done
 
 # Create tmp dir and make sure it's going to be deleted in any case
-TMPDIR=`mktemp -d`
+TMPDIR=`mktemp -d tmp-XXXXX`
 function cleanup {
     echo "Removing temp dir ${TMPDIR}"
     rm -rf "${TMPDIR}"
