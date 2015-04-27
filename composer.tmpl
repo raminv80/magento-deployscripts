@@ -1,0 +1,28 @@
+{
+    "name": "my/project",
+    "minimum-stability": "dev",
+    "require": {
+        "aoepeople/composer-installers": "*",
+        "aoepeople/envsettingstool": "*"
+    },
+    "repositories": [
+        {
+            "type":"composer",
+            "url":"http://packages.firegento.com"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AOEpeople/composer-installers.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AOEpeople/EnvSettingsTool.git"
+        }
+    ],
+    "extra": {
+        "magento-root-dir":"./htdocs/"
+    },
+    "config" : {
+        "bin-dir": "./tools/"
+    }
+}
